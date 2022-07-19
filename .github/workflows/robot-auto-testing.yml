@@ -4,7 +4,7 @@ on:
   push:
     # runs tests for commits pushed to master
     branches:
-      - main
+      - master
     # do not run tests if file README.md changes
     paths-ignore:
       - 'README.md'

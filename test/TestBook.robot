@@ -2,7 +2,7 @@
 Library  SeleniumLibrary
 
 *** Variables ***
-${URL}          https://1c41-41-248-194-211.eu.ngrok.io
+${URL}          https://robot-framework-demo-staging.herokuapp.com/
 ${BOOKNAME}     Book Title
 ${AUTHOR}       Salah Eddine ZEMMOURI
 ${ISBN}         123
@@ -11,9 +11,9 @@ ${ISBN}         123
 
 AddBookTest
     Open Browser    ${URL}
-    Set Browser Implicit Wait   5
+    # # Set Browser Implicit Wait   5
     # # ngrok continue button
-    Click Button    xpath=//span[contains(text(),"Visit Site")]/ancestor::button[@class="ant-btn ant-btn-primary"]
+    # # Click Button    xpath=//span[contains(text(),"Visit Site")]/ancestor::button[@class="ant-btn ant-btn-primary"]
     Set Browser Implicit Wait   5
     Click Button    xpath=//button[@id="btn-addBook"]
     Input Text  id=title    ${BOOKNAME}

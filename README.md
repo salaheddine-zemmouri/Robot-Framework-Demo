@@ -1,3 +1,3 @@
-# React Books
+# Robot Framework demo
 
-A simple example of how to consume a RESTful API in React.
+A simple demo of Robot Framework automating testing using a react one pager.
